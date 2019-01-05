@@ -3,11 +3,14 @@
     left: 50%;
     top: 25%;
     transform: translate(-50%, -50%);
+    font-size: 4em;
 }
 
 .study-button {
+    color: #ffffff;
     background-color: #f1652a;
     height: 100px;
+    margin: 10px;
     width: 700px;
     overflow: hidden;
     border-radius: 25px;
@@ -16,8 +19,10 @@
 
 .quiz-button {
     background-color: #2fa4d5;
+    color: #ffffff;
     height: 100px;
     width: 700px;
+    margin: 10px;
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 2px 2px 5px black;
@@ -25,8 +30,10 @@
 
 .create-button {
     background-color: #f7d33c;
+    color: #ffffff;
     height: 100px;
     width: 700px;
+    margin: 10px;
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 2px 2px 5px black;
@@ -47,6 +54,6 @@
     font-weight: bold;
 }
 
-li {
+.main-li {
     font-size: 5em;
 }

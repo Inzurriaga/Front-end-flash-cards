@@ -7,31 +7,13 @@ class MainMenu extends Component {
         return (
             <div className="main-menu-component">
                 <button className="study-button" onClick={''}>
-                    <ul>
-                        <li>&lt; STUDY &gt;</li>
-                        <li>&lt; h1 &gt;</li>
-                        <li>&lt; img &gt;</li>
-                        <li>&lt; header &gt;</li>
-                        <li>&lt; html &gt;</li>
-                    </ul>
+                    &lt; STUDY &gt;
                 </button>
                 <button className="quiz-button" onClick={''}> 
-                    <ul>
-                        <li>&#123; QUIZ &#125;</li>
-                        <li>&#123; color &#125;</li>
-                        <li>&#123; animation &#125;</li>
-                        <li>&#123; position &#125;</li>
-                        <li>&#123; background &#125;</li>
-                    </ul>
+                    &#123; QUIZ &#125;
                 </button>
                 <button className="create-button" onClick={''}>
-                    <ul>
-                        <li>&#40; CREATE &#41;</li>
-                        <li>&#40; &#41;</li>
-                        <li>&#40; &#41;</li>
-                        <li>&#40; &#41;</li>
-                        <li>&#40; &#41;</li>
-                    </ul>
+                     &#40; CREATE &#41;
                 </button>
             </div>
         )

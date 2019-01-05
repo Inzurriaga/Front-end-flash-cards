@@ -3,6 +3,7 @@ html, body {
   overflow: hidden;
   background-color: #495462;
   font-family: 'Titan One', cursive;
+  color: white;
 }
 
 h1 {
@@ -48,7 +49,6 @@ header {
 }
 .page {
   height: 100%;
-  background-color: pink;
 }
 
 .main-content {
@@ -81,14 +81,14 @@ header {
   transition: 0.4s;
   height: 0;
   width: 0;
-  background-color: yellow;
+  background-color: white;
   border-bottom-right-radius: 100%;
 }
 
 .hamburger-container:hover .hamburger-circle{
   height: 150px;
   width: 150px;
-  background-color: yellow;
+  background-color: white;
   border-bottom-right-radius: 100%;
 }
 

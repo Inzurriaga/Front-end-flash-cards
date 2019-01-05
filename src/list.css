@@ -1,0 +1,32 @@
+.list {
+    overflow-x: scroll;
+    height: 300px;
+    background-color: rgba( 0, 0, 0, 0.5)
+}
+
+.list-card {
+    height: 250px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.list-component {
+    overflow: scroll;
+    height: 50%;
+}
+
+.list-html {
+    background-color: #f1652a;
+}
+
+.list-css {
+    background-color: #2fa4d5;
+}
+
+.list-javascript {
+    background-color: #f7d33c;
+}
+
+.list-personal {
+    background-color: yellow;
+}

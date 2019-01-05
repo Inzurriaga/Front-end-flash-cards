@@ -64,9 +64,9 @@ class App extends Component {
             <header>
               <h1>Flash Card For Coding</h1>
             </header>
-            {/* <MainMenu /> */}
+            <MainMenu />
           {/* <ListComponent cards={this.state.cards} /> */}
-            <Controls />
+            {/* <Controls /> */}
           </section>
         </div>
       );

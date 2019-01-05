@@ -14,6 +14,7 @@ class StudyControls extends Component {
         return (
             <form>
                 <fieldset>
+                    <legend>select Catagory</legend>
                     <div className="card html-button">
                         <h2>HTML</h2>
                         <input type="checkbox"></input>
