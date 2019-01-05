@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import MainMenu from "./MainMenu";
-import Nav from "./NavBar"
-import ListComponent from "./listcomponent"
+import Nav from "./NavBar";
+import Controls from "./studycontrols";
+import ListComponent from "./listcomponent";
 import './App.css';
 import './normalize.css'
 
@@ -28,7 +29,7 @@ class App extends Component {
           falseAnswer: ["arrayEx.push(insertDatatype)","arrayEx.remove(insertDatatype)","arrayEx.delete(insertDatatype)"],
           color: "#f7d33c"
         }],
-        page: "main menu"
+        page: "MainMenu"
     }
   }
 
@@ -56,8 +57,7 @@ class App extends Component {
   }
 
   render() {
-    if(this.state.page === "main menu") {
-        return ( 
+        return (
         <div className="page">
           <Nav toggleMenu={this.toggleMenu}  />
           <section className="main-content">
@@ -65,23 +65,11 @@ class App extends Component {
               <h1>flash card for coding</h1>
             </header>
             <MainMenu />
+          {/* <ListComponent cards={this.state.cards} /> */}
+            <Controls />
           </section>
         </div>
       );
-        }else {
-          return ( 
-            <div className="page">
-              <Nav toggleMenu={this.toggleMenu}
-                toggleComponents={this.togglecomponents}/>
-              <section className="main-content">
-                <header>
-                  <h1>flash card for coding</h1>
-                </header>
-                <ListComponent cards={this.state.cards}/>
-              </section>
-            </div>
-          );
-        }
 }
 }
 

@@ -9,7 +9,6 @@ function Decks(props) {
             <ul>
                 {
                     props.cards.map((card) => {
-                        // card.catagory === "html";
                         return (
                         <li>
                             <h3>{card.catagory}</h3>
