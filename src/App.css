@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+ul {
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 2em;
+  display: list-item;
+  height: 60px;
+  margin-bottom: 30px;
+  transform: translateX(-300px);
+  transition: transform .7s 0s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+}
+
+li {
+  display: block;
+  transition: color 0.7s;
+}
+
+#root {
+  height: 100%;
+}
+.page {
+  height: 100%;
+  background-color: pink;
+}
+
+.main-content {
+  height: 200%;
+  transform-origin: top left;
+  transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+  background-color: blue;
+}
+
+.hamburger-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.hamburger-circle {
+  position: absolute;
+  z-index: -1;
+  transition: 0.4s;
+  height: 0;
+  width: 0;
+  background-color: yellow;
+  border-bottom-right-radius: 100%;
+}
+
+.hamburger-container:hover .hamburger-circle{
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  border-bottom-right-radius: 100%;
+}
+
+.what .main-content {
+  transform: rotate(-30deg)
+}
+
+.what li {
+  transform: translateX(0);
+  transition: transform 0.7s .46s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+
+.what li:nth-child(2){
+   transition-delay: .47s;
+  }
+.what li:nth-child(3){
+    transition-delay: .48s;
+  }
+.what li:nth-child(4){
+    transition-delay: .49s;
+  }
+.what li:nth-child(5){
+    transition-delay: .50s;
+  }
+.what li:nth-child(6){
+    transition-delay: .51s;
+  }
+
+
+  /* the hamburger */
+
+  .stick {
+    height: 10px;
+    width: 75px;
+    background-color: crimson;
+    border-radius: 25px;
+    margin: 5px;
+  }
+
