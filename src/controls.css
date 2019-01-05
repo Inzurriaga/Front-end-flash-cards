@@ -1,0 +1,32 @@
+fieldset { 
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    height: 40%;
+}
+
+.card {
+    height: 60%;
+    width: 25%;
+    display: inline-block;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.html-button {
+    background-color:  #f1652a;
+}
+
+.css-button {
+    background-color:  #2fa4d5;
+}
+
+.javascript-button {
+    background-color:  #f7d33c;
+}
+
+.personal-button {
+    background-color: #8dbf28;
+}

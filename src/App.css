@@ -1,15 +1,24 @@
 html, body {
   height: 100%;
   overflow: hidden;
+  background-color: #495462;
+  font-family: 'Titan One', cursive;
 }
 
 h1 {
   text-align: center;
+  font-size: 4em;
   margin: 0;
+  color: #ffffff;
 }
 
 ul {
   list-style-type: none;
+}
+
+header {
+  background-color: rgba(128,128,128, 0.5);
+  height: 100px; 
 }
 
 .nav {
@@ -47,7 +56,13 @@ ul {
   position: relative;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
-  background-color: blue;
+  background: repeating-linear-gradient(
+  45deg,
+  #23252b,
+  #23252b 10px,
+  #2e353d 10px,
+  #2e353d 20px
+);
 }
 
 .hamburger-container {

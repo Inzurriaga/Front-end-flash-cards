@@ -7,14 +7,29 @@
 
 .study-button {
     background-color: #f1652a;
+    height: 100px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .quiz-button {
     background-color: #2fa4d5;
+    height: 100px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .create-button {
     background-color: #f7d33c;
+    height: 100px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .study-button li{
@@ -30,4 +45,8 @@
 .create-button li{
     color: white;
     font-weight: bold;
+}
+
+li {
+    font-size: 5em;
 }

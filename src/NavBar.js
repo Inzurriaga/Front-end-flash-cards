@@ -30,7 +30,6 @@ class Nav extends Component {
                 <li>Quiz</li>
                 <li>Create</li>
                 <li>View Decks</li>
-                <li>Practice</li>
             </ul>
         </div>
     )

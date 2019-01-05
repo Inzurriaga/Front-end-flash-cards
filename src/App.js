@@ -62,9 +62,9 @@ class App extends Component {
           <Nav toggleMenu={this.toggleMenu}  />
           <section className="main-content">
             <header>
-              <h1>flash card for coding</h1>
+              <h1>Flash Card For Coding</h1>
             </header>
-            <MainMenu />
+            {/* <MainMenu /> */}
           {/* <ListComponent cards={this.state.cards} /> */}
             <Controls />
           </section>
