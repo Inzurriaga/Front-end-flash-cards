@@ -1,9 +1,36 @@
 import React, { Component } from 'react';
 import MainMenu from "./MainMenu";
+import Nav from "./NavBar"
+import ListComponent from "./listcomponent"
 import './App.css';
 import './normalize.css'
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+        cards: [{
+          catagory: "html",
+          question: "What are the three main tags that all HTMl structure needs?",
+          answer: "<html>, <head>, and <body>",
+          falseAnswer: ["<header>, <section>, and <footer>", "<div>, <h1>, and <p>", "<section>, <div>, and <span>"],
+          color: "#f1652a"
+        }, {
+          catagory: "css",
+          question: "Which property allows you to customize your cursor?",
+          answer: "cursor",
+          falseAnswer: ["point","cursor-style","mouse"],
+          color: "#2fa4d5"
+        }, {
+          catagory: "javascript",
+          question: "Which method allows you to remove a datatype at the end of an array?",
+          answer: "arrayEx.pop(insertDatatype)",
+          falseAnswer: ["arrayEx.push(insertDatatype)","arrayEx.remove(insertDatatype)","arrayEx.delete(insertDatatype)"],
+          color: "#f7d33c"
+        }],
+        page: "main menu"
+    }
+  }
 
   toggleMenu() {
     let page = document.querySelector(".page");
@@ -24,34 +51,38 @@ class App extends Component {
     })
   }
 
-  render() {
-    return (
-      <div className="page">
-        <div onClick={this.toggleMenu} className="hamburger-container">
-          <div className="hamburger-circle"></div>
-          <div className="stick-container">
-            <div className="stick stick-one"></div>
-            <div className="stick stick-two"></div>
-            <div className="stick stick-three"></div>
-          </div>
-        </div>
-        <ul className="nav">
-          <li>Main Menu</li>
-          <li>Study</li>
-          <li>Quiz</li>
-          <li>Create</li>
-          <li>View Decks</li>
-          <li>Practice</li>
-        </ul>
-        <section className="main-content">
-          <header>
-            <h1>flash card for coding</h1>
-          </header>
-          <MainMenu />
-        </section>
-      </div>
-    );
+  togglecomponents(string) {
+    this.setState({ page: string })
   }
+
+  render() {
+    if(this.state.page === "main menu") {
+        return ( 
+        <div className="page">
+          <Nav toggleMenu={this.toggleMenu}  />
+          <section className="main-content">
+            <header>
+              <h1>flash card for coding</h1>
+            </header>
+            <MainMenu />
+          </section>
+        </div>
+      );
+        }else {
+          return ( 
+            <div className="page">
+              <Nav toggleMenu={this.toggleMenu}
+                toggleComponents={this.togglecomponents}/>
+              <section className="main-content">
+                <header>
+                  <h1>flash card for coding</h1>
+                </header>
+                <ListComponent cards={this.state.cards}/>
+              </section>
+            </div>
+          );
+        }
+}
 }
 
 export default App;

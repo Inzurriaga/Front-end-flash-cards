@@ -4,3 +4,30 @@
     top: 25%;
     transform: translate(-50%, -50%);
 }
+
+.study-button {
+    background-color: #f1652a;
+}
+
+.quiz-button {
+    background-color: #2fa4d5;
+}
+
+.create-button {
+    background-color: #f7d33c;
+}
+
+.study-button li{
+    color: white;
+    font-weight: bold;
+}
+
+.quiz-button li{
+    color: white;
+    font-weight: bold;
+}
+
+.create-button li{
+    color: white;
+    font-weight: bold;
+}

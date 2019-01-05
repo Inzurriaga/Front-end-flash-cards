@@ -6,7 +6,7 @@ class MainMenu extends Component {
     render() {
         return (
             <div className="main-menu-component">
-                <button onClick={''}>
+                <button className="study-button" onClick={''}>
                     <ul>
                         <li>&lt; STUDY &gt;</li>
                         <li>&lt; h1 &gt;</li>
@@ -15,7 +15,7 @@ class MainMenu extends Component {
                         <li>&lt; html &gt;</li>
                     </ul>
                 </button>
-                <button onClick={''}> 
+                <button className="quiz-button" onClick={''}> 
                     <ul>
                         <li>&#123; QUIZ &#125;</li>
                         <li>&#123; color &#125;</li>
@@ -24,7 +24,7 @@ class MainMenu extends Component {
                         <li>&#123; background &#125;</li>
                     </ul>
                 </button>
-                <button onClick={''}>
+                <button className="create-button" onClick={''}>
                     <ul>
                         <li>&#40; CREATE &#41;</li>
                         <li>&#40; &#41;</li>
