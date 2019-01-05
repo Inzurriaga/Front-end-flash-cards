@@ -3,7 +3,12 @@ html, body {
   overflow: hidden;
 }
 
-ul {
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.nav {
   position: fixed;
   bottom: 0;
   left: 50px;
@@ -12,7 +17,7 @@ ul {
   padding: 0;
 }
 
-li {
+.nav li {
   font-size: 1.5em;
   display: list-item;
   height: 60px;
@@ -21,7 +26,7 @@ li {
   transition: transform .7s 0s cubic-bezier(1.000, 0.005, 0.240, 1.000);
 }
 
-li {
+.nav li {
   display: block;
   transition: color 0.7s;
 }
@@ -36,6 +41,7 @@ li {
 
 .main-content {
   height: 200%;
+  position: relative;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1), -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
   background-color: blue;

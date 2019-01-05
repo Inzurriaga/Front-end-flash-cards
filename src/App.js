@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import MainMenu from "./MainMenu";
 import './App.css';
 import './normalize.css'
-// import MainMenu from './mainmenu.js'
 
 class App extends Component {
 
@@ -44,7 +44,10 @@ class App extends Component {
           <li>Practice</li>
         </ul>
         <section className="main-content">
-          {/* <MainMenu /> */}
+          <header>
+            <h1>flash card for coding</h1>
+          </header>
+          <MainMenu />
         </section>
       </div>
     );
