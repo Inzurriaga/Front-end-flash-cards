@@ -15,6 +15,7 @@
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 2px 2px 5px black;
+    border: none;
 }
 
 .quiz-button {
@@ -26,6 +27,7 @@
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 2px 2px 5px black;
+    border: none;
 }
 
 .create-button {
@@ -37,6 +39,7 @@
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 2px 2px 5px black;
+    border: none;
 }
 
 .study-button li{

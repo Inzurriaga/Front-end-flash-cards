@@ -3,6 +3,7 @@ import MainMenu from "./MainMenu";
 import Nav from "./NavBar";
 import Controls from "./studycontrols";
 import ListComponent from "./listcomponent";
+import CreateCard from "./CreateCard"
 import './App.css';
 import './normalize.css'
 
@@ -29,7 +30,7 @@ class App extends Component {
           falseAnswer: ["arrayEx.push(insertDatatype)","arrayEx.remove(insertDatatype)","arrayEx.delete(insertDatatype)"],
           color: "#f7d33c"
         }],
-        page: "MainMenu"
+        page: ""
     }
   }
 
@@ -52,25 +53,67 @@ class App extends Component {
     })
   }
 
-  togglecomponents(string) {
-    this.setState({ page: string })
+  togglecomponents = (string)  => {
+      this.setState({ page: string });
   }
 
   render() {
-        return (
+    switch(this.state.page) {
+      case "ListComponent":
+      return (
         <div className="page">
-          <Nav toggleMenu={this.toggleMenu}  />
+          <Nav toggleMenu={this.toggleMenu} 
+                toggleComponents={this.togglecomponents} />
           <section className="main-content">
             <header>
-              <h1>Flash Card For Coding</h1>
+              <h1>Flash Cards For Dummies</h1>
             </header>
-            <MainMenu />
-          {/* <ListComponent cards={this.state.cards} /> */}
-            {/* <Controls /> */}
+            <ListComponent cards={this.state.cards} />
           </section>
         </div>
       );
-}
+      case "Study":
+      case "Quiz": 
+      return (
+        <div className="page">
+          <Nav toggleMenu={this.toggleMenu}  
+                toggleComponents={this.togglecomponents}/>
+          <section className="main-content">
+            <header>
+              <h1>Flash Cards For Dummies</h1>
+            </header>
+            <Controls />
+          </section>
+        </div>
+      );
+      case "Create": 
+      return (
+        <div className="page">
+          <Nav toggleMenu={this.toggleMenu}  
+                toggleComponents={this.togglecomponents}/>
+          <section className="main-content">
+            <header>
+              <h1>Flash Cards For Dummies</h1>
+            </header>
+            <CreateCard />
+          </section>
+        </div>
+      );
+      default: 
+      return (
+        <div className="page">
+          <Nav toggleMenu={this.toggleMenu} 
+                toggleComponents={this.togglecomponents}/>
+          <section className="main-content">
+            <header>
+              <h1>Flash Cards For Dummies</h1>
+            </header>
+            <MainMenu />
+          </section>
+        </div>
+      );
+    }
+  }
 }
 
 export default App;

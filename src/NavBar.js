@@ -1,22 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import './normalize.css'
 
-class Nav extends Component {
-    constructor() {
-        super();
-        this.state = {
-            pages: "main page"
-        }
-    }
-    toggleMenu(string) {
-        this.props.toggleComponents(string)
-    }
-
-    render() {
+function Nav(props) {
     return (
         <div>
-            <div onClick={this.props.toggleMenu} className="hamburger-container">
+            <div onClick={props.toggleMenu} className="hamburger-container">
                 <div className="hamburger-circle"></div>
                 <div className="stick-container">
                 <div className="stick stick-one"></div>
@@ -25,15 +14,14 @@ class Nav extends Component {
                 </div>
             </div>
             <ul className="nav">
-                <li>Main Menu</li>
-                <li>Study</li>
-                <li>Quiz</li>
-                <li>Create</li>
-                <li>View Decks</li>
+                <li onClick={() => props.toggleComponents("MainMenu")}>Main Menu</li>
+                <li onClick={() => props.toggleComponents("Study")}>Study</li>
+                <li onClick={() => props.toggleComponents("Quiz")}>Quiz</li>
+                <li onClick={() => props.toggleComponents("Create")}>Create</li>
+                <li onClick={() => props.toggleComponents("ListComponent")}>View Decks</li>
             </ul>
         </div>
     )
-    }
 }
 
 export default Nav;
