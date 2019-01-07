@@ -1,11 +1,28 @@
 import React, { Component } from 'react';
 import './style/Main.scss';
 
-function CreateCard() {
-    // createCard() {
-    //     //save card to local storage
-    // }
+class Card {
+    constructor(answer, question, color) {
+        this.catagory = "personal"
+        this.question = question;
+        this.answer = answer;
+        this.color = color;
+    }
+}
 
+class CreateCard extends Component {
+    constructor() {
+        super();
+        this.state = {
+            personalDeck: []
+        }
+    }
+
+    createCard() {
+        let answer = document.querySelector(".");
+        let question = document.querySelector(".");
+    }
+    render() {
         return (
             <form>
                 <fieldset>
@@ -26,6 +43,7 @@ function CreateCard() {
                 </fieldset>
             </form>
         )
+    }
 }
 
 export default CreateCard;

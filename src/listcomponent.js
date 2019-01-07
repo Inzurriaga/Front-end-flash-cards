@@ -7,49 +7,49 @@ function Decks(props) {
             <h2>HTML</h2>
             <ul className="list">
                 {
-                    props.cards.reduce((acc, card) => {
-                    if(card.catagory === "html") {
-                         acc =
+                   props.cards.filter((card) => {
+                      return  card.catagory === "html"
+                   }).map((card) => {
+                       return (
                         <li className="list-card list-html">
-                            <h3>{card.catagory}</h3>
+                            <h4>{card.catagory}</h4>
                             <p>{card.question}</p>
                             <p>{card.answer}</p>
                         </li>
-                    }
-                    return acc
-                    }, [])
+                       )
+                   })
                 }
             </ul>
             <h2>CSS</h2>
             <ul className="list">
             {
-                    props.cards.reduce((acc, card) => {
-                    if(card.catagory === "css") {
-                         acc =
+                   props.cards.filter((card) => {
+                      return  card.catagory === "css"
+                   }).map((card) => {
+                       return (
                         <li className="list-card list-css">
-                            <h3>{card.catagory}</h3>
+                            <h4>{card.catagory}</h4>
                             <p>{card.question}</p>
                             <p>{card.answer}</p>
                         </li>
-                    }
-                    return acc
-                    }, [])
+                       )
+                   })
                 }
             </ul>
             <h2>Javascript</h2>
             <ul className="list">
             {
-                    props.cards.reduce((acc, card) => {
-                    if(card.catagory === "javascript") {
-                         acc =
+                   props.cards.filter((card) => {
+                      return  card.catagory === "javascript"
+                   }).map((card) => {
+                       return (
                         <li className="list-card list-javascript">
-                            <h3>{card.catagory}</h3>
+                            <h4>{card.catagory}</h4>
                             <p>{card.question}</p>
                             <p>{card.answer}</p>
                         </li>
-                    }
-                    return acc
-                    }, [])
+                       )
+                   })
                 }
             </ul>
             <h2>personal deck</h2>
@@ -59,7 +59,7 @@ function Decks(props) {
                     if(card.catagory === "personal") {
                          acc =
                         <li className="list-card list-personal">
-                            <h3>{card.catagory}</h3>
+                            <h4>{card.catagory}</h4>
                             <p>{card.question}</p>
                             <p>{card.answer}</p>
                         </li>

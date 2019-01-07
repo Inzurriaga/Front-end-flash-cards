@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MainMenu from "./MainMenu";
 import Nav from "./NavBar";
-import Controls from "./studycontrols";
+import Controls from "./controls";
 import ListComponent from "./listcomponent";
 import CreateCard from "./CreateCard"
 import './style/Main.scss';
@@ -10,27 +10,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        cards: [{
-          catagory: "html",
-          question: "What are the three main tags that all HTMl structure needs?",
-          answer: "<html>, <head>, and <body>",
-          falseAnswer: ["<header>, <section>, and <footer>", "<div>, <h1>, and <p>", "<section>, <div>, and <span>"],
-          color: "#f1652a"
-        }, {
-          catagory: "css",
-          question: "Which property allows you to customize your cursor?",
-          answer: "cursor",
-          falseAnswer: ["point","cursor-style","mouse"],
-          color: "#2fa4d5"
-        }, {
-          catagory: "javascript",
-          question: "Which method allows you to remove a datatype at the end of an array?",
-          answer: "arrayEx.pop(insertDatatype)",
-          falseAnswer: ["arrayEx.push(insertDatatype)","arrayEx.remove(insertDatatype)","arrayEx.delete(insertDatatype)"],
-          color: "#f7d33c"
-        }],
+        cards: [],
         page: ""
     }
+  }
+
+  componentDidMount() {
+    fetch("http://memoize-datasets.herokuapp.com/api/v1/gabeCards")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          cards: data.gabeCards
+        });
+      })
+      .catch(error => console.log(error))
   }
 
   toggleMenu() {
