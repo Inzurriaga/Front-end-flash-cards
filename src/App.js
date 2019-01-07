@@ -4,8 +4,7 @@ import Nav from "./NavBar";
 import Controls from "./studycontrols";
 import ListComponent from "./listcomponent";
 import CreateCard from "./CreateCard"
-import './App.css';
-import './normalize.css'
+import './style/Main.scss';
 
 class App extends Component {
   constructor() {
@@ -108,7 +107,7 @@ class App extends Component {
             <header>
               <h1>Flash Cards For Dummies</h1>
             </header>
-            <MainMenu />
+            <MainMenu  toggleComponents={this.togglecomponents}/>
           </section>
         </div>
       );

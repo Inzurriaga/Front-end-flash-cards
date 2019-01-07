@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css';
-import './normalize.css'
-import './list.css'
+import './style/Main.scss';
 
 function Decks(props) {
     return (

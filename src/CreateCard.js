@@ -1,29 +1,20 @@
 import React, { Component } from 'react';
-import './normalize.css'
-import './controls.css'
+import './style/Main.scss';
 
-class CreateCard extends Component {
-    constructor() {
-        super()
-        this.state = {
-            
-        }
-    }
+function CreateCard() {
+    // createCard() {
+    //     //save card to local storage
+    // }
 
-    createCard() {
-        //save card to local storage
-    }
-
-    render() {
         return (
             <form>
                 <fieldset>
                     <legend>Create a Card</legend>
-                    <div>
+                    <div className="create-card">
                         <label>Create Question/Defintion</label>
                         <textarea></textarea>
                     </div>
-                    <div>
+                    <div className="create-card">
                         <label>Create Answer/Word</label>
                         <textarea></textarea>
                     </div>
@@ -35,7 +26,6 @@ class CreateCard extends Component {
                 </fieldset>
             </form>
         )
-    }
 }
 
 export default CreateCard;

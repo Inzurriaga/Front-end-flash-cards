@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import './normalize.css'
-import './controls.css'
+import './style/Main.scss';
 
 class StudyControls extends Component {
     constructor() {

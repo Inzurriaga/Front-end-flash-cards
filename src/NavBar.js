@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import './normalize.css'
+import './style/Main.scss';
 
 function Nav(props) {
     return (
