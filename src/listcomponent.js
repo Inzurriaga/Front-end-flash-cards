@@ -54,19 +54,19 @@ function Decks(props) {
             </ul>
             <h2>personal deck</h2>
             <ul className="list"> 
-            {
-                    props.cards.reduce((acc, card) => {
-                    if(card.catagory === "personal") {
-                         acc =
-                        <li className="list-card list-personal">
-                            <h4>{card.catagory}</h4>
-                            <p>{card.question}</p>
-                            <p>{card.answer}</p>
-                        </li>
+                {
+                    props.personalCards.filter((card) => {
+                        return  card.catagory === "personal"
+                    }).map((card) => {
+                        return (
+                            <li className="list-card list-personal">
+                                <h4>{card.catagory}</h4>
+                                <p>{card.question}</p>
+                                <p>{card.answer}</p>
+                            </li>
+                        )
+                    })
                     }
-                    return acc
-                    }, [])
-                }
             </ul>
         </div>
     )

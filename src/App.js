@@ -5,6 +5,7 @@ import Controls from "./controls";
 import ListComponent from "./listcomponent";
 import CreateCard from "./CreateCard"
 import './style/Main.scss';
+import { parse } from 'querystring';
 
 class App extends Component {
   constructor() {
@@ -16,6 +17,7 @@ class App extends Component {
     }
   }
 
+
   componentDidMount() {
     fetch("http://memoize-datasets.herokuapp.com/api/v1/gabeCards")
       .then(response => response.json())
@@ -24,7 +26,9 @@ class App extends Component {
           cards: data.gabeCards
         });
       })
-      .catch(error => console.log(error))
+      .catch(error => console.log(error));
+      const personalDeck = JSON.parse( localStorage.getItem( "personalDeck" ) );
+    this.setState( { personalCards: personalDeck } );
   }
 
   toggleMenu() {
@@ -61,7 +65,8 @@ class App extends Component {
             <header>
               <h1>Flash Cards For Dummies</h1>
             </header>
-            <ListComponent cards={this.state.cards} />
+            <ListComponent cards={this.state.cards}
+                            personalCards={this.state.personalCards} />
           </section>
         </div>
       );
