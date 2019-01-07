@@ -54,9 +54,6 @@ img {
     background-color: #8dbf28;
 }
 
-input {
-    opacity: 0;
-}
 
 .container input:checked ~ .checkmark {
     background-color: #2196F3;
@@ -70,7 +67,6 @@ input {
     margin-top: 35px;
     left: 50%;
     transform: translate( -50%, 0);
-
 }
 
 .controls-component {
@@ -79,3 +75,4 @@ input {
     justify-content: space-around;
     flex-flow: row;
 }
+
