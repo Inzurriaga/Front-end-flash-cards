@@ -2,72 +2,33 @@ import React from 'react';
 import './style/Main.scss';
 
 function Decks(props) {
+    let listArray=["html", "css", "javascript", "personal"]
     return (
         <div className="list-component">
-            <h2>HTML</h2>
-            <ul className="list">
-                {
-                   props.cards.filter((card) => {
-                      return  card.catagory === "html"
-                   }).map((card) => {
-                       return (
-                        <li className="list-card list-html">
-                            <h4>{card.catagory}</h4>
-                            <p>{card.question}</p>
-                            <p>{card.answer}</p>
-                        </li>
-                       )
-                   })
-                }
-            </ul>
-            <h2>CSS</h2>
-            <ul className="list">
-            {
-                   props.cards.filter((card) => {
-                      return  card.catagory === "css"
-                   }).map((card) => {
-                       return (
-                        <li className="list-card list-css">
-                            <h4>{card.catagory}</h4>
-                            <p>{card.question}</p>
-                            <p>{card.answer}</p>
-                        </li>
-                       )
-                   })
-                }
-            </ul>
-            <h2>Javascript</h2>
-            <ul className="list">
-            {
-                   props.cards.filter((card) => {
-                      return  card.catagory === "javascript"
-                   }).map((card) => {
-                       return (
-                        <li className="list-card list-javascript">
-                            <h4>{card.catagory}</h4>
-                            <p>{card.question}</p>
-                            <p>{card.answer}</p>
-                        </li>
-                       )
-                   })
-                }
-            </ul>
-            <h2>personal deck</h2>
-            <ul className="list"> 
-                {
-                    props.personalCards.filter((card) => {
-                        return  card.catagory === "personal"
-                    }).map((card) => {
-                        return (
-                            <li className="list-card list-personal">
-                                <h4>{card.catagory}</h4>
-                                <p>{card.question}</p>
-                                <p>{card.answer}</p>
-                            </li>
-                        )
-                    })
-                    }
-            </ul>
+        {
+            listArray.map((catagory) => {
+                return (
+                    <div>
+                        <h2>{catagory}</h2>
+                        <ul className="list">
+                            {
+                            props.cards.filter((card) => {
+                                return  card.catagory === catagory
+                            }).map((card) => {
+                                return (
+                                    <li className="list-card" style={{"background-color": card.color}}>
+                                        <h4>{card.catagory}</h4>
+                                        <p>{card.question}</p>
+                                        <p>{card.answer}</p>
+                                    </li>
+                                )
+                            })
+                            }
+                        </ul>
+                    </div>
+                )
+            })
+        }
         </div>
     )
 }
