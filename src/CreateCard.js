@@ -22,7 +22,7 @@ class CreateCard extends Component {
         let personalArray = this.state.personalDeck;
         let answer = document.querySelector(".answer-text").value;
         let question = document.querySelector(".question-text").value;
-        let color = document.querySelector(".radio").checked.value
+        let color = document.querySelector('input[name="create"]:checked').value;
         let card = new Card(answer, question, color)
         personalArray.push(card)  
         this.setState({ personalDeck: personalArray })
@@ -30,6 +30,7 @@ class CreateCard extends Component {
     }
 
     render() {
+        let colorList = ["red", "orange", "pink", "blue"]
         return (
             <section>
                     <h2 className="create-card-title">Create a Card</h2>
@@ -45,14 +46,16 @@ class CreateCard extends Component {
                     </div>
                     <h3 className="pick-label">Pick a color</h3>
                     <div className="pick-container">
-                        <input id="radio_1" class="radio isHidden" name="create" type="radio" value="hello"></input>
-                        <label for="radio_1" class="label"></label>
-                        <input id="radio_2" class="radio isHidden" name="create" type="radio"></input>
-                        <label for="radio_2" class="label"></label>
-                        <input id="radio_3" class="radio isHidden" name="create" type="radio"></input>
-                        <label for="radio_3" class="label"></label>
-                        <input id="radio_4" class="radio isHidden" name="create" type="radio"></input>
-                        <label for="radio_4" class="label"></label>
+                        {
+                            colorList.map((button, index) => {
+                                return (
+                                    <div>
+                                        <input id={"radio" + index} class="radio isHidden" name="create" type="radio" value={button}></input>
+                                        <label for={"radio" + index} class="label"> </label>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                     <button onClick={this.createCard} className="create-card-button">Create Card</button>
             </section>

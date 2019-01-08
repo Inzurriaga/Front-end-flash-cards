@@ -66,7 +66,7 @@ class App extends Component {
               <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
             <ListComponent cards={this.state.cards}
-                            personalCards={this.state.personalCards} />
+                             personalCards={this.state.personalCards} />
           </section>
         </div>
       );
