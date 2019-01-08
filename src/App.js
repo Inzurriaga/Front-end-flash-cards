@@ -63,7 +63,7 @@ class App extends Component {
                 toggleComponents={this.togglecomponents} />
           <section className="main-content">
             <header>
-              <h1>Flash Cards For Dummies</h1>
+              <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
             <ListComponent cards={this.state.cards}
                             personalCards={this.state.personalCards} />
@@ -78,7 +78,7 @@ class App extends Component {
                 toggleComponents={this.togglecomponents}/>
           <section className="main-content">
             <header>
-              <h1>Flash Cards For Dummies</h1>
+              <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
             <Controls />
           </section>
@@ -91,7 +91,7 @@ class App extends Component {
                 toggleComponents={this.togglecomponents}/>
           <section className="main-content">
             <header>
-              <h1>Flash Cards For Dummies</h1>
+              <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
             <CreateCard />
           </section>
@@ -104,7 +104,7 @@ class App extends Component {
                 toggleComponents={this.togglecomponents}/>
           <section className="main-content">
             <header>
-              <h1>Flash Cards For Dummies</h1>
+              <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
             <MainMenu  toggleComponents={this.togglecomponents}/>
           </section>

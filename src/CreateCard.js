@@ -22,7 +22,7 @@ class CreateCard extends Component {
         let personalArray = this.state.personalDeck;
         let answer = document.querySelector(".answer-text").value;
         let question = document.querySelector(".question-text").value;
-        let color = document.querySelector(".create-card-input").checked.value
+        let color = document.querySelector(".radio").checked.value
         let card = new Card(answer, question, color)
         personalArray.push(card)  
         this.setState({ personalDeck: personalArray })
@@ -32,7 +32,7 @@ class CreateCard extends Component {
     render() {
         return (
             <section>
-                    <h2>Create a Card</h2>
+                    <h2 className="create-card-title">Create a Card</h2>
                     <div className="create-card-container">
                         <div className="create-card">
                             <h4>Create Question/Defintion</h4>
@@ -44,21 +44,15 @@ class CreateCard extends Component {
                         </div>
                     </div>
                     <h3 className="pick-label">Pick a color</h3>
-                    <div className="radio-button">
-                        <input className="create-card-input" type="radio" value="orange" name="card-color"/>
-                        <span className="radio-selected"></span>
-                    </div>
-                    <div className="radio-button">
-                        <input className="create-card-input" type="radio" value="blue" name="card-color"/>
-                        <span className="radio-selected"></span>
-                    </div>
-                    <div className="radio-button">
-                        <input className="create-card-input" type="radio" value="red" name="card-color"/>
-                        <span className="radio-selected"></span>
-                    </div>
-                    <div className="radio-button">
-                        <input className="create-card-input" type="radio" value="yellow" name="card-color"/>
-                        <span className="radio-selected"></span>
+                    <div className="pick-container">
+                        <input id="radio_1" class="radio isHidden" name="create" type="radio" value="hello"></input>
+                        <label for="radio_1" class="label"></label>
+                        <input id="radio_2" class="radio isHidden" name="create" type="radio"></input>
+                        <label for="radio_2" class="label"></label>
+                        <input id="radio_3" class="radio isHidden" name="create" type="radio"></input>
+                        <label for="radio_3" class="label"></label>
+                        <input id="radio_4" class="radio isHidden" name="create" type="radio"></input>
+                        <label for="radio_4" class="label"></label>
                     </div>
                     <button onClick={this.createCard} className="create-card-button">Create Card</button>
             </section>
