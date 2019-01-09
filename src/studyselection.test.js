@@ -13,5 +13,4 @@ describe('the selection component for the study', () => {
   it('should display study selection', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 });

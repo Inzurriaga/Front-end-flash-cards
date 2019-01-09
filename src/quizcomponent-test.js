@@ -13,5 +13,4 @@ describe('the actual quiz', () => {
   it('should display the actual quiz', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 });

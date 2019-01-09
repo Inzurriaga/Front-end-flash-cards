@@ -15,5 +15,4 @@ describe('the list component', () => {
   it('should display the list', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 });
