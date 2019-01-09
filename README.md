@@ -27,7 +27,7 @@ $ npm start
 ```
 
 ## Project Development Notes:
-   Flash cards for Dummnies was built using ReactJS, and tested using Jest and Enyzme. The project incorporates class and functional components, along SASS styling for visualization. Flash cards for Dummnies was created over a 1 week period as a 3-person group project in Module 2 of the Front-End Engineering program at Turing School of Software and Design. 
+   Flash cards for Dummnies was built using ReactJS, and tested using Jest and Enyzme. The project incorporates class and functional components, along SASS styling for visualization. Flash cards for Dummnies was created over a 1 week period as in Module 2 of the Front-End Engineering program at Turing School of Software and Design. 
 
 
 
