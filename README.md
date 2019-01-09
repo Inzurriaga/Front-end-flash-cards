@@ -13,7 +13,7 @@ These instructions will get a copy of the project up and running on your local m
 
 clone down the repository:
 ```
-$ git clone https://github.com/shannonmoranetz/mentalitea.git
+$ git clone https://github.com/Inzurriaga/Front-end-flash-cards.git
 ```
 
 cd into directory and run npm install:
