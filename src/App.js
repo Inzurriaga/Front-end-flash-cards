@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import MainMenu from "./MainMenu";
 import Nav from "./NavBar";
-import Controls from "./controls";
+import Controls from "./Quiz";
 import ListComponent from "./listcomponent";
 import CreateCard from "./CreateCard"
 import './style/Main.scss';
-import { parse } from 'querystring';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
         cards: [],
-        personalCards: [],
         page: ""
     }
   }
@@ -26,9 +24,12 @@ class App extends Component {
           cards: data.gabeCards
         });
       })
+      .then(() => {
+        const personalDeck = JSON.parse( localStorage.getItem( "personalDeck" ) );
+        let together = this.state.cards.concat( personalDeck )
+        this.setState( { cards:  together });
+      })
       .catch(error => console.log(error));
-      const personalDeck = JSON.parse( localStorage.getItem( "personalDeck" ) );
-    this.setState( { personalCards: personalDeck } );
   }
 
   toggleMenu() {
@@ -93,7 +94,7 @@ class App extends Component {
             <header>
               <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
-            <CreateCard />
+            <CreateCard cards={this.state.cards}/>
           </section>
         </div>
       );

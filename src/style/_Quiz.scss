@@ -1,0 +1,43 @@
+.quiz-card {
+    display: inline-block;
+    width: 450px;
+    height: 600px; 
+    background-color:  black;
+    border-radius: 25px;
+    text-align: center;
+    margin: 10px 50px 10px 200px;
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 25% auto;
+        width: 80%;
+        font-size: 3em;
+    }
+}
+
+.quiz-answers-container {
+    display: inline-block;
+}
+
+.quiz-answer {
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    display: block;
+    border-radius: 25px;
+    font-size: 2em;
+    margin-top: 35px;
+    left: 50%;
+    &:nth-child(3) {
+        background-color: #f1652a;
+    }
+    &:nth-child(4) {
+        background-color: #2fa4d5;
+    }
+    &:nth-child(5) {
+        background-color: #f7d33c;
+    }
+    &:nth-child(6) {
+        background-color: #8dbf28;
+    }
+}

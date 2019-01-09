@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import './style/Main.scss';
-
-class Card {
-    constructor(answer, question, color) {
-        this.catagory = "personal"
-        this.question = question;
-        this.answer = answer;
-        this.color = color || "#ffffff";
-    }
-}
+import Card from './cardObject'
 
 class CreateCard extends Component {
     constructor() {
@@ -20,17 +12,14 @@ class CreateCard extends Component {
 
     createCard = () => {
         let personalArray = this.state.personalDeck;
-        let answer = document.querySelector(".answer-text").value;
-        let question = document.querySelector(".question-text").value;
-        let color = document.querySelector('input[name="create"]:checked').value;
-        let card = new Card(answer, question, color)
+        let card = new Card(document.querySelector(".answer-text").value, document.querySelector(".question-text").value, document.querySelector('input[name="create"]:checked').value)
         personalArray.push(card)  
         this.setState({ personalDeck: personalArray })
         localStorage.setItem('personalDeck', JSON.stringify(this.state.personalDeck));
     }
 
     render() {
-        let colorList = ["red", "orange", "pink", "blue"]
+        let colorList = ["#f1652a", "#2fa4d5", "#f7d33c", "#8dbf28"]
         return (
             <section>
                     <h2 className="create-card-title">Create a Card</h2>
