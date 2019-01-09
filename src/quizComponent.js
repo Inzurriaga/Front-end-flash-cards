@@ -6,14 +6,20 @@ class Quiz extends Component {
         super();
         this.state = {
             currentScore: 0,
-            highScore: 90,
+            highScore: 0,
             currentCardIndex: 0
         }
     }
-    checkAnswer = () => {
+    checkAnswer = (answer) => {
+        let newscore = this.state.currentScore
+        if(this.props.cards[this.state.currentCardIndex].answer == answer) {
+            newscore++
+        }
+        console.log(answer)
         let newsome = this.state.currentCardIndex
         newsome++
-        this.setState({ currentCardIndex: newsome })
+        this.setState({ currentCardIndex: newsome,
+                        currentScore: newscore })
     }
     render() {
         return (
@@ -26,9 +32,9 @@ class Quiz extends Component {
             <h3>current score: {this.state.currentScore}</h3>
             <h3>high score: {this.state.highScore}</h3>
             {
-                this.props.cards[this.state.currentCardIndex].falseAnswer.map((answer) => {
+                this.props.answer[this.state.currentCardIndex].map((answer) => {
                     return (
-                        <button className="quiz-answer" onClick={this.checkAnswer} value={answer}>{answer}</button>
+                        <button className="quiz-answer" onClick={() => this.checkAnswer({answer})} value={answer}>{answer}</button>
                     )
                 })
             }

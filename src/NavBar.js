@@ -13,11 +13,11 @@ function Nav(props) {
                 </div>
             </div>
             <ul className="nav">
-                <li onClick={() => props.toggleComponents("MainMenu")}>Main Menu</li>
-                <li onClick={() => props.toggleComponents("Study")}>Study</li>
-                <li onClick={() => props.toggleComponents("Quiz")}>Quiz</li>
-                <li onClick={() => props.toggleComponents("Create")}>Create</li>
-                <li onClick={() => props.toggleComponents("ListComponent")}>View Decks</li>
+                <li onClick={() => props.toggleComponents("MainMenu")} >Main Menu</li>
+                <li onClick={() => props.toggleComponents("Study")} >Study</li>
+                <li onClick={() => props.toggleComponents("Quiz")} >Quiz</li>
+                <li onClick={() => props.toggleComponents("Create")} >Create</li>
+                <li onClick={() => props.toggleComponents("ListComponent")} >View Decks</li>
             </ul>
         </div>
     )
