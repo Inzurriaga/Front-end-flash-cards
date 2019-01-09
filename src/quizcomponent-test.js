@@ -1,17 +1,16 @@
 import React from 'react';
-import App from './App.js';
+import Quiz from './quizComponent';
 import { shallow } from 'enzyme';
 
-
-describe('app', () => {
+describe('the actual quiz', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <App />);
+      <Quiz />);
   });
 
-  it('should display app', () => {
+  it('should display the actual quiz', () => {
     expect(wrapper).toMatchSnapshot();
   });
 

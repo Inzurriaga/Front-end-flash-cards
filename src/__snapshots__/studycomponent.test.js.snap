@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actual study component should display study component 1`] = `
+<div>
+  <div
+    className="study-card"
+    onClick={[Function]}
+  >
+    <div
+      className="card-front"
+    >
+      <h3>
+        html
+      </h3>
+      <p>
+        What are the three main tags that all HTMl structure needs?
+      </p>
+    </div>
+    <div
+      className="card-back"
+    >
+      <h3>
+        html
+      </h3>
+      <p>
+        &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;
+      </p>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    previous
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    next
+  </button>
+</div>
+`;
+
+exports[`should display all tea cards 1`] = `
+<div>
+  <div
+    className="study-card"
+    onClick={[Function]}
+  >
+    <div
+      className="card-front"
+    >
+      <h3>
+        html
+      </h3>
+      <p>
+        What are the three main tags that all HTMl structure needs?
+      </p>
+    </div>
+    <div
+      className="card-back"
+    >
+      <h3>
+        html
+      </h3>
+      <p>
+        &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;
+      </p>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    previous
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    next
+  </button>
+</div>
+`;
+
+exports[`should display study component 1`] = `
+<div>
+  <div
+    className="study-card"
+    onClick={[Function]}
+  >
+    <div
+      className="card-front"
+    >
+      <h3>
+        html
+      </h3>
+      <p>
+        What are the three main tags that all HTMl structure needs?
+      </p>
+    </div>
+    <div
+      className="card-back"
+    >
+      <h3>
+        html
+      </h3>
+      <p>
+        &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;
+      </p>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    previous
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    next
+  </button>
+</div>
+`;

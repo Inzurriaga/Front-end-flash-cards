@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app should display app 1`] = `
+<div
+  className="page"
+>
+  <Nav
+    toggleComponents={[Function]}
+    toggleMenu={[Function]}
+  />
+  <section
+    className="main-content"
+  >
+    <header>
+      <h1
+        onClick={[Function]}
+      >
+        Flash Cards For Dummies
+      </h1>
+    </header>
+    <MainMenu
+      toggleComponents={[Function]}
+    />
+  </section>
+</div>
+`;
+
+exports[`teaList should display all tea cards 1`] = `
+<div
+  className="page"
+>
+  <Nav
+    toggleComponents={[Function]}
+    toggleMenu={[Function]}
+  />
+  <section
+    className="main-content"
+  >
+    <header>
+      <h1
+        onClick={[Function]}
+      >
+        Flash Cards For Dummies
+      </h1>
+    </header>
+    <MainMenu
+      toggleComponents={[Function]}
+    />
+  </section>
+</div>
+`;
+
+exports[`teaList should display app 1`] = `
+<div
+  className="page"
+>
+  <Nav
+    toggleComponents={[Function]}
+    toggleMenu={[Function]}
+  />
+  <section
+    className="main-content"
+  >
+    <header>
+      <h1
+        onClick={[Function]}
+      >
+        Flash Cards For Dummies
+      </h1>
+    </header>
+    <MainMenu
+      toggleComponents={[Function]}
+    />
+  </section>
+</div>
+`;

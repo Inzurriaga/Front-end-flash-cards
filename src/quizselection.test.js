@@ -1,17 +1,16 @@
 import React from 'react';
-import App from './App.js';
+import QuizSelection from './QuizSelection';
 import { shallow } from 'enzyme';
 
-
-describe('app', () => {
+describe('the quiz selection component', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <App />);
+      <QuizSelection />);
   });
 
-  it('should display app', () => {
+  it('should display all quiz selection', () => {
     expect(wrapper).toMatchSnapshot();
   });
 

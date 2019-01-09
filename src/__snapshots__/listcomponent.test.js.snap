@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`teaList should display all tea cards 1`] = `
+<div
+  className="list-component"
+>
+  <div>
+    <h2>
+      html
+    </h2>
+    <ul
+      className="list"
+    >
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          What are the three main tags that all HTMl structure needs?
+        </p>
+        <p>
+          &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          How do you insert an image?
+        </p>
+        <p>
+          &lt;img&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          What are the basic structure for a drop down menu?
+        </p>
+        <p>
+          &lt;select&gt; and &lt;option&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          How do you insert a video?
+        </p>
+        <p>
+          &lt;video&gt;
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>
+      css
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+  <div>
+    <h2>
+      javascript
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+  <div>
+    <h2>
+      personal
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+</div>
+`;
+
+exports[`teaList should display the list 1`] = `
+<div
+  className="list-component"
+>
+  <div>
+    <h2>
+      html
+    </h2>
+    <ul
+      className="list"
+    >
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          What are the three main tags that all HTMl structure needs?
+        </p>
+        <p>
+          &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          How do you insert an image?
+        </p>
+        <p>
+          &lt;img&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          What are the basic structure for a drop down menu?
+        </p>
+        <p>
+          &lt;select&gt; and &lt;option&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          How do you insert a video?
+        </p>
+        <p>
+          &lt;video&gt;
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>
+      css
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+  <div>
+    <h2>
+      javascript
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+  <div>
+    <h2>
+      personal
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+</div>
+`;
+
+exports[`the list component should display the list 1`] = `
+<div
+  className="list-component"
+>
+  <div>
+    <h2>
+      html
+    </h2>
+    <ul
+      className="list"
+    >
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          What are the three main tags that all HTMl structure needs?
+        </p>
+        <p>
+          &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          How do you insert an image?
+        </p>
+        <p>
+          &lt;img&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          What are the basic structure for a drop down menu?
+        </p>
+        <p>
+          &lt;select&gt; and &lt;option&gt;
+        </p>
+      </li>
+      <li
+        className="list-card"
+        style={
+          Object {
+            "background-color": "#f1652a",
+          }
+        }
+      >
+        <h4>
+          html
+        </h4>
+        <p>
+          How do you insert a video?
+        </p>
+        <p>
+          &lt;video&gt;
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>
+      css
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+  <div>
+    <h2>
+      javascript
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+  <div>
+    <h2>
+      personal
+    </h2>
+    <ul
+      className="list"
+    />
+  </div>
+</div>
+`;

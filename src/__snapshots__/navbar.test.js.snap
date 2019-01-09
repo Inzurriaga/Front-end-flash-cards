@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nav should display nav 1`] = `
+<div>
+  <div
+    className="hamburger-container"
+  >
+    <div
+      className="hamburger-circle"
+    />
+    <div
+      className="stick-container"
+    >
+      <div
+        className="stick stick-one"
+      />
+      <div
+        className="stick stick-two"
+      />
+      <div
+        className="stick stick-three"
+      />
+    </div>
+  </div>
+  <ul
+    className="nav"
+  >
+    <li
+      onClick={[Function]}
+    >
+      Main Menu
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Study
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Quiz
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Create
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      View Decks
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`teaList should display all tea cards 1`] = `
+<div>
+  <div
+    className="hamburger-container"
+  >
+    <div
+      className="hamburger-circle"
+    />
+    <div
+      className="stick-container"
+    >
+      <div
+        className="stick stick-one"
+      />
+      <div
+        className="stick stick-two"
+      />
+      <div
+        className="stick stick-three"
+      />
+    </div>
+  </div>
+  <ul
+    className="nav"
+  >
+    <li
+      onClick={[Function]}
+    >
+      Main Menu
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Study
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Quiz
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Create
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      View Decks
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`teaList should display nav 1`] = `
+<div>
+  <div
+    className="hamburger-container"
+  >
+    <div
+      className="hamburger-circle"
+    />
+    <div
+      className="stick-container"
+    >
+      <div
+        className="stick stick-one"
+      />
+      <div
+        className="stick stick-two"
+      />
+      <div
+        className="stick stick-three"
+      />
+    </div>
+  </div>
+  <ul
+    className="nav"
+  >
+    <li
+      onClick={[Function]}
+    >
+      Main Menu
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Study
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Quiz
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      Create
+    </li>
+    <li
+      onClick={[Function]}
+    >
+      View Decks
+    </li>
+  </ul>
+</div>
+`;

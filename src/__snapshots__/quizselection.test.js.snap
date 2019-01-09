@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`teaList should display all quiz selection 1`] = `
+<div>
+  <h2>
+    select catagories
+  </h2>
+  <Controls
+    create={[Function]}
+  />
+</div>
+`;
+
+exports[`teaList should display all tea cards 1`] = `
+<div>
+  <h2>
+    select catagories
+  </h2>
+  <Controls
+    create={[Function]}
+  />
+</div>
+`;
+
+exports[`the quiz selection component should display all quiz selection 1`] = `
+<div>
+  <h2>
+    select catagories
+  </h2>
+  <Controls
+    create={[Function]}
+  />
+</div>
+`;

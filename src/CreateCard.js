@@ -39,8 +39,8 @@ class CreateCard extends Component {
                             colorList.map((button, index) => {
                                 return (
                                     <div>
-                                        <input id={"radio" + index} class="radio isHidden" name="create" type="radio" value={button}></input>
-                                        <label for={"radio" + index} class="label"> </label>
+                                        <input id={"radio" + index} className="radio isHidden" name="create" type="radio" value={button}></input>
+                                        <label for={"radio" + index} className="label"> </label>
                                     </div>
                                 )
                             })

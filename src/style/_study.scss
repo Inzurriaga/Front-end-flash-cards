@@ -1,13 +1,12 @@
 .study-card {
    transform-style: preserve-3d;
     position: relative;
-    display: inline-block;
     width: 450px;
     height: 600px; 
     background-color:  black;
     border-radius: 25px;
     text-align: center;
-    margin: 10px 50px 10px 200px;
+    margin: 10px auto;
     h3 {
         margin: 0;
     }
@@ -32,15 +31,22 @@
     left: 50%;
     transform: translate(-50%, 0);
     backface-visibility: hidden;
+    p {
+        width: 100%;
+        font-size: 2em;
+    }
 }
 
 .card-back {
     position: absolute;
     top: 10px;
     left: 50%;
-    transform: translate(-50%, 0);
     backface-visibility: hidden;
-    transform: rotateY(180deg)
+    transform: rotateY(180deg) translate(50%, 0);
+    p {
+        width: 100%;
+        font-size: 2em;
+    }
 }
 
 
@@ -62,7 +68,7 @@
     transform: scale(1) rotateY(-180deg);
     }
     50% {
-      transform: scale(0.4) rotateY(-90deg);
+      transform: scale(0.4) rotateY(-90deg); 
     }
     100% {
         transform: scale(1) rotateY(0);

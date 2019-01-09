@@ -1,17 +1,17 @@
 import React from 'react';
-import App from './App.js';
+import Controls from './Controls.js';
 import { shallow } from 'enzyme';
 
 
-describe('app', () => {
+describe('controls', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(
-      <App />);
+      <Controls />);
   });
 
-  it('should display app', () => {
+  it('should display controls', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
