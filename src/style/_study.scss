@@ -1,0 +1,70 @@
+.study-card {
+   transform-style: preserve-3d;
+    position: relative;
+    display: inline-block;
+    width: 450px;
+    height: 600px; 
+    background-color:  black;
+    border-radius: 25px;
+    text-align: center;
+    margin: 10px 50px 10px 200px;
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 25% auto;
+        width: 80%;
+        font-size: 3em;
+    }
+}
+
+.study-card.flip-back {
+    animation: flipback 0.5s linear forwards;
+}
+
+.study-card.flip-front {
+    animation: flipfront 0.5s linear forwards;
+}
+
+.card-front {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    backface-visibility: hidden;
+    transform: rotateY(180deg)
+}
+
+
+
+@keyframes flipback {
+    0% {
+      transform: scale(1) rotateY(0);
+    }
+    50% {
+      transform: scale(0.4) rotateY(-90deg);
+    }
+    100% {
+      transform: scale(1) rotateY(-180deg);
+    }
+  }
+
+  @keyframes flipfront {
+    0% {
+    transform: scale(1) rotateY(-180deg);
+    }
+    50% {
+      transform: scale(0.4) rotateY(-90deg);
+    }
+    100% {
+        transform: scale(1) rotateY(0);
+    }
+  }

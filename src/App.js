@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import MainMenu from "./MainMenu";
 import Nav from "./NavBar";
-import Controls from "./Quiz";
+import QuizSelection from "./QuizSelection";
 import ListComponent from "./listcomponent";
 import CreateCard from "./CreateCard"
+import StudySelection from "./StudySelection"
 import './style/Main.scss';
 
 class App extends Component {
@@ -72,6 +73,19 @@ class App extends Component {
         </div>
       );
       case "Study":
+      return (
+        <div className="page">
+          <Nav toggleMenu={this.toggleMenu}  
+                toggleComponents={this.togglecomponents}/>
+          <section className="main-content">
+            <header>
+              <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
+            </header>
+            <StudySelection  cards={this.state.cards}
+                            selection={this.state.page}/>
+          </section>
+        </div>
+      );
       case "Quiz": 
       return (
         <div className="page">
@@ -81,7 +95,8 @@ class App extends Component {
             <header>
               <h1 onClick={() => this.togglecomponents("MainMenu")}>Flash Cards For Dummies</h1>
             </header>
-            <Controls />
+            <QuizSelection  cards={this.state.cards}
+                            selection={this.state.page}/>
           </section>
         </div>
       );

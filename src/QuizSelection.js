@@ -24,12 +24,12 @@ class StudyControls extends Component {
             <div>
                 <h2>select catagories</h2>
                 <Controls create={this.createDeck}
-                        Component={this.props.Component}/>
+                        selection={this.props.selection}/>
             </div>
         )}else {
             return (
             <div>
-                <Quiz />
+                <Quiz cards={this.props.cards}/>
             </div>
             )
         }

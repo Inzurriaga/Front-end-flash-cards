@@ -25,7 +25,7 @@ function Controls(props) {
                     <img src={require("./image/clover.png")}/>
                 </label>
             </div>
-            <button onClick={props.create} className="start-button">start study</button>
+            <button onClick={props.create} className="start-button">{"start " + props.selection}</button>
         </div>
     )
 }
